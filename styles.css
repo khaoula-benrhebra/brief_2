@@ -64,16 +64,18 @@ nav {
 }
 
 .brand {
+     position: relative;
     color: white;
     font-size: 24px;
     font-weight: bold;
+    margin-right: 300px;
 }
 
 
 
 /* Hero section*/
 .hero {
-    background-image: url('./images/home.webp');
+    background-image: url('./images/home.jpg');
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -116,10 +118,6 @@ nav {
     background-color: #6e99f5;
 }
 
-
-
-/* Start Gallery */
-
 section#collection {
     padding: 40px;
     text-align: center;
@@ -140,9 +138,7 @@ section#collection {
     margin-left: auto;
     margin-right: auto;
     word-spacing: 6px; /* Adjust this value as needed */
-
     line-height: 30px;
-
 }
 
 .art-grid {
@@ -192,14 +188,10 @@ section#collection {
     background-color: #81D4FA;
 }
 
-
-
-
-
 /* Footer */
 footer {
     background-color:#0288D1 ;
-    color: rgb(0, 0, 0);
+    color: #0F1668;
     padding: 40px 0;
 }
 
@@ -249,10 +241,12 @@ footer p {
     height: 30px;
 }
 
+
+
 /*Gallery*/
 
 .hero-Gallery {
-    background-image: url('./images/categoriesart.png');
+    background-image: url('./images/categoriesart.jpg');
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -280,6 +274,7 @@ footer p {
     margin-bottom: 1.5em;
     word-spacing: 5px;
 }
+
 
 .btn-Gallery {
     background-color: #0288D1;
@@ -317,22 +312,14 @@ section#Categories {
     margin-left: auto;
     margin-right: auto;
     word-spacing: 6px; /* Adjust this value as needed */
-
     line-height: 30px;
-
 }
-
-
-
-
-
 
 .art-grid-Gallery {
     display: flex;
-    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
-    justify-content: space-around; /* Espace entre les éléments */
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-
 .art-item-Gallery {
     text-align: center; /* Centre le texte sous l'image */
     margin: 20px; /* Espace autour de chaque item */
@@ -340,31 +327,25 @@ section#Categories {
 }
 
 .art-item-Gallery img {
-    width: 100%; /* Rend l'image responsive */
-    height: 30%; /* Garde le ratio d'aspect */
+    width: 100%;
+    height: 30%; 
     border-radius: 10px;
-}
-
-.Title {
-    margin-top: 10px; /* Espace entre l'image et le titre */
-    font-size: 18px; /* Taille de police pour le titre */
-}
-
-.Description {
-    margin-top: 5px; /* Espace entre le titre et la description */
-    font-size: 14px; /* Taille de police pour la description */
-    color: #666; /* Couleur du texte */
 }
 .art-item-Gallery img:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
+  .art-item-Gallery .Title {
+    color: #ffa2a8;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
 #show-more-Gallery {
-    margin-top: 650px;
+    margin-top: 500px;
     position: absolute;
 }
 
-#show-more-Gallery .show-more-Gall {
+#show-more-Gallery button {
     background-color: #0288D1;
     color: white;
     border: none;
@@ -375,22 +356,197 @@ section#Categories {
     transition: background-color 0.3s ease;
 }
 
-#show-more-Gallery .Gallery-button:hover {
+#show-more-Gallery button:hover {
     background-color: #81D4FA;
 }
 
 
-/*Avout us*/
 
 
+/*About us*/
 .hero-about {
-    background-image: url('./images/aboutus.png');
+    background-image: url('./images/aboutus.jpg');
     background-size: cover;
     background-position: center;
     height: 80vh;
+}
+section#About {
+    padding: 40px;
+    text-align: center;
+    background-color: #E0F7FA; /* light sea color */
+}
+
+#About h2 {
+    color: #0288D1;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#About h3 {
+    color: #ffa2a8;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#About p {
+   
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 30px;
+    word-spacing: 6px; 
+    line-height: 20px;
+    
+}
+.art-grid-About {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+
+.art-itm-About {
+    text-align: center; 
+    margin: 20px;
+    width: 280px; 
+    height: 30%;
+}
+
+.art-itm-About img {
+    width: 280px; 
+    height: 200px; 
+    border-radius: 10px;
+}
+
+
+
+/*Contact*/
+.hero-contact {
+    background-image: url('./images/contactus.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+section#contact {
+    padding: 40px;
+    text-align: center;
+    background-color: #E0F7FA; /* light sea color */
+}
+
+.art-grid-contact {
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
+
+.art-itm-Contact {
+    position: relative;
+    background-color:#E0F7FA;
+    border: 0px solid #ccc;
+    border-radius: 10px;
+    width: 35%;
+    min-width: 250px; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    top: -90px;
+    
+
+}
+
+.art-itm-Contact img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.art-itm-Contact h4 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #ffa2a8;
+    font-size: 18px;
+}
+
+.art-itm-Contact p {
+    font-size: 1em;
+    color: #666;
+}
+#Contact-Support {
+    margin-top: 50px;
+    position: relative;
+}
+
+#Contact-Support button {
+    background-color: #0288D1;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+/*Autum*/
+section#ourcategories {
+    padding: 40px;
+    text-align: center;
+    background-color: #E0F7FA; /* light sea color */
+}
+.Categorie {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cat {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 25%;
+    min-width: 250px; 
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    height: 500px;
+
+}
+
+.cat img {
+    border-radius: 5%;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.cat h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.cat p {
+    font-size: 1em;
+    color: #666;
+}
+.cat span{
+    color: rgb(240, 93, 93);
+}
+#Buy-Now {
+    margin-top: 8px;
+    position: relative;
+}
+
+#Buy-Now button {
+    background-color: #0288D1;
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
