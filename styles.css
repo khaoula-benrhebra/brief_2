@@ -71,8 +71,6 @@ nav {
     margin-right: 300px;
 }
 
-
-
 /* Hero section*/
 .hero {
     background-image: url('./images/home.jpg');
@@ -243,8 +241,10 @@ footer p {
 
 
 
-/*Gallery*/
 
+
+
+/*Gallery*/
 .hero-Gallery {
     background-image: url('./images/categoriesart.jpg');
     background-size: cover;
@@ -363,6 +363,7 @@ section#Categories {
 
 
 
+
 /*About us*/
 .hero-about {
     background-image: url('./images/aboutus.jpg');
@@ -417,6 +418,8 @@ section#About {
 
 
 
+
+
 /*Contact*/
 .hero-contact {
     background-image: url('./images/contactus.jpg');
@@ -456,13 +459,11 @@ section#contact {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    object-fit: cover;
     margin-bottom: 15px;
 }
 
 .art-itm-Contact h4 {
     margin-bottom: 10px;
-    font-size: 1.5em;
     color: #ffa2a8;
     font-size: 18px;
 }
@@ -485,6 +486,7 @@ section#contact {
     font-size: 16px;
     cursor: pointer;
 }
+
 
 
 
